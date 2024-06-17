@@ -34,8 +34,11 @@ function Editar() {
         let formattedValue = value;
         if (name === "amount") {
 
-            if ((value.startsWith(",")) || (value.startsWith("-,"))) {
+            if ((value.startsWith(","))) {
                 formattedValue = `0,${value.substring(4)}`;
+            }
+            if ((value.startsWith("-,"))) {
+                formattedValue = `-0,${value.substring(4)}`;
             }
 
             const parts = formattedValue.split(',');

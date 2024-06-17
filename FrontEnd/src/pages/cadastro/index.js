@@ -32,9 +32,13 @@ function Cadastro() {
         let formattedValue = value;
         if (name === "amount") {
 
-            if ((value.startsWith(",")) || (value.startsWith("-,"))) {
+            if ((value.startsWith(","))) {
                 formattedValue = `0,${value.substring(4)}`;
             }
+            if ((value.startsWith("-,"))) {
+                formattedValue = `-0,${value.substring(4)}`;
+            }
+            
             
             const parts = formattedValue.split(',');
             if (parts[1] && parts[1].length > 2) {
