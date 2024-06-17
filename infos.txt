@@ -1,0 +1,14 @@
+***********************************************************************************\\
+install Project:
+npm install concurrently 
+
+install BackEnd:
+npm install express mongodb crypto hex-to-uuid cors 
+
+install FrontEnd:
+npm install axios react-dom react-router-dom react-scripts react web-vitals react-number-format react-toastify
+
+*********************************************************************************
+
+
+

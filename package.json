@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "axios": "^1.7.2",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.19.2",
+    "hex-to-uuid": "^1.1.1",
+    "mongodb": "^6.6.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "^5.0.1",
+    "rxjs": "^7.8.1",
+    "web-vitals": "^4.0.1"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run start-back\" \"npm run start-front\"",
+    "start-front": "cd FrontEnd && npm start && cd ..",
+    "start-back": "cd BackEnd && node index.js && cd .."
+  }
+}
